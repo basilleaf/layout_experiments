@@ -1,0 +1,33 @@
+html * {
+  margin: 0;
+  padding: 0;
+  background-color: black; }
+
+body {
+  height: 100%;
+  overflow: hidden; }
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 2fr));
+  grid-auto-rows: 186px;
+  grid-auto-flow: dense; }
+
+ul > li {
+  list-style-type: none; }
+
+ul > li img {
+  position: absolute;
+  /* absolute or fixed positioning required */
+  clip-path: circle(90px at 90px 90px); }
+
+ul > li img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+ul > li:hover {
+  -webkit-transform: scale(0.95); }
+
+/*# sourceMappingURL=mouseover.css.map */
