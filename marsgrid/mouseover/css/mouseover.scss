@@ -1,0 +1,40 @@
+$background-color: black;
+$container-size: 186px; // 127px; // 106px;
+$circle-size: 90px; // 60px; // 50px;
+$circle-center_x: $circle-size;
+$circle-center_y: $circle-size;
+
+html * {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($container-size, 2fr));
+  grid-auto-rows: $container-size;
+  grid-auto-flow: dense;
+}
+ul > li {
+  list-style-type: none;
+}
+ul > li img {
+  position: absolute; /* absolute or fixed positioning required */
+  clip-path: circle($circle-size at $circle-center_x $circle-center_y);
+}
+
+// hover effect
+ul > li img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+ul > li:hover {
+  -webkit-transform: scale(0.95);
+}

@@ -1,0 +1,28 @@
+html * {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
+  padding: 0 30px;
+}
+ul > li {
+  list-style-type: none;
+}
+ul > li img {
+  position: absolute; /* absolute or fixed positioning required */
+}
+li:nth-child(4) {
+  grid-row: span 6;
+}
+li:nth-child(5) {
+  grid-row: span 2;
+}
+li:nth-child(6) {
+  grid-column: span 4;
+  grid-row: span 4;
+}

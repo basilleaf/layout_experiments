@@ -1,0 +1,8 @@
+venv
+*.pyc
+.DS_Store
+__pycache__
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

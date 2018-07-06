@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mars Grid </title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    $(function() {
+
+      $(".container div").click(function(e) {
+        /* make entire div card clickable for link*/
+        if ($(e.target).is("a")) {
+          return;
+        }
+        var link = $(this).find("a");
+        link[0].click();
+      });
+    });
+</script>
+
+  </head>
+  <body>
+  <div class = "header">
+
+    <h1>Mars Grid</h1>
+    <p>
+      Some experiments playing with css layouts and Mars images (MRO/HiRISE).
+      This page is CSS Grid with Flexbox inside the cards and look mah no media queries!
+
+    <p>
+      The pages below download a lot of images so BEWARE.
+    </p>
+  </div><!-- header -->
+
+  <div class = "container">
+
+    <div>
+      <h1>breathing dots</h1>
+      <p>
+        For large screens and desktops.
+      </p>
+      <p>
+        <a href = "breathing_dots/">Breathing Dots</a>
+      </p>
+      <img src = "css/img/breath_ss.png" alt = "screenshot of Breathing Dots" />
+    </div>
+
+    <div>
+      <h1>flinch</h1>
+      <p>
+        just a little shrinky mouseover effect.
+      </p>
+      <p>
+        <a href = "mouseover/">flinch</a>
+      </p>
+      <img src = "css/img/mouseover.png" alt = "screenshot of mouseover effect" />
+    </div>
+
+    <div>
+      <h1>Falling Dots</h1>
+      <p>
+        Idea which is coming soon maybe.
+      </p>
+      <!--p>
+        <a href = "breathing_dots.html">Breathing Dots</a>
+      </p-->
+      <img src = "css/img/breath_ss.png" alt = "screenshot of Breathing Dots" />
+    </div>
+
+
+
+</div><!-- container -->
+
+  </body>
+</html>
