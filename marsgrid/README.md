@@ -1,7 +1,6 @@
 ## MarsGrid
 
 Some experiments playing with css layouts and Mars images (MRO/HiRISE).
-This page is CSS Grid with Flexbox inside the cards and look mah no media queries!
 
 deployed here: http://beforeamillionuniverses.com/marsgrid/
 
