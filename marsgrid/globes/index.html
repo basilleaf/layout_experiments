@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Mars Grid - CSS Grid Examples</title>
+
+    <meta charset="utf-8">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <script id="template" type="x-tmpl-mustache">
+
+      <section class="stage">
+        <figure class="ball"
+            style = "background: url('{{ imgUrl }}') repeat-x;"
+          ><span class="shadow"></span></figure>
+      </section>
+
+    </script>
+
+    <script>
+
+        $(function(){
+
+            $("li").each(function( index ) {
+
+                var imgUrl = $(this).find('img')[0].src;
+                view = { imgUrl: imgUrl}
+                var output = Mustache.render($('#template').html(), view)
+                $(this).html(output);
+
+            });
+        });
+
+    </script>
+
+  </head>
+  <body>
+
+          <ul>
+                  <li><img src="../images_400x400/ESP_013368_1885.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_013954_1780.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_014185_1095.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_014351_1995.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_016700_2075.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_017154_1390.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_017174_1730.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_019753_2000.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_020065_1335.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_020087_1515.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_020090_1985.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_020782_1610.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_020795_2025.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_020798_2040.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_021676_1430.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_021915_1005.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_022405_1910.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_026086_2115.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_027077_1785.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_027339_2060.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_027834_1755.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_027989_1425.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_028004_1825.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_028020_2560.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_028269_1755.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_028335_1755.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_028575_1890.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_028799_1565.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_029226_1670.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_030373_1755.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_031944_1790.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_032011_1425.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_032078_1420.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_032522_1345.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_032562_1670.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_032836_1790.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033014_2260.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033108_1800.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033242_1845.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033242_2315.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033243_2165.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033248_1520.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033252_2070.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033264_1640.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033293_1755.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033297_1745.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033371_1080.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033433_2650.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033483_1805.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033556_1890.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033564_1405.jpg"></li>
+
+                  <li><img src="../images_400x400/ESP_033565_1945.jpg"></li>
+
+          </ul>
+
+
+
+  </body>
+</html>
