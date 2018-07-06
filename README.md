@@ -2,6 +2,6 @@
 
 Just playing around.
 
-## Marsgrid
+## /marsgrid
 
-CSS Grid and images of Mars. 
+CSS Grid and images of Mars. http://beforeamillionuniverses.com/marsgrid/
