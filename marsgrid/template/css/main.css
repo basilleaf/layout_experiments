@@ -1,0 +1,35 @@
+html * {
+  margin: 0;
+  padding: 0;
+  background-color: black; }
+
+body {
+  height: 100%; }
+
+/* grid layout */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+  grid-auto-rows: 220px;
+  grid-auto-flow: dense; }
+
+/* make them squares into circles */
+ul > li {
+  list-style-type: none;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-size: auto 100%; }
+
+img {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: auto; }
+
+/*# sourceMappingURL=main.css.map */
