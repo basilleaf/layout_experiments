@@ -1,0 +1,35 @@
+html * {
+  margin: 0;
+  padding: 0;
+  background-color: black; }
+
+body {
+  height: 100%; }
+
+/* grid layout */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(147px, 2fr));
+  grid-auto-rows: 147px;
+  grid-auto-flow: dense; }
+
+/* make them squares into circles */
+ul > li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  border-radius: 50%; }
+
+img {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: auto; }
+
+/*# sourceMappingURL=main.css.map */

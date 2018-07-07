@@ -1,27 +1,8 @@
-html * {
-  margin: 0;
-  padding: 0;
-  background-color: black; }
-
 body {
   height: 100%;
-  overflow: hidden; }
+  /* no scrolling plz */ }
 
-ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(146px, 2fr));
-  grid-auto-rows: 146px;
-  grid-auto-flow: dense; }
-
-ul > li {
-  list-style-type: none; }
-
-ul > li img {
-  position: absolute;
-  /* absolute or fixed positioning required */
-  clip-path: circle(70px at 70px 70px); }
-
-li img {
+img {
   animation: fade 9s forwards;
   -webkit-animation: fade 9s forwards;
   -moz-animation: fade 9s forwards;
@@ -70,4 +51,4 @@ li:nth-child(3n + 4) img {
   100% {
     opacity: 0; } }
 
-/*# sourceMappingURL=breathing_dots.css.map */
+/*# sourceMappingURL=custom.css.map */

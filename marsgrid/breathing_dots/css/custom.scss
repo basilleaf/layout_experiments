@@ -1,37 +1,13 @@
-$background-color: black;
-$container-size: 146px; // 127px; // 106px;
-$circle-size: 70px; // 60px; // 50px;
-$circle-center_x: $circle-size;
-$circle-center_y: $circle-size;
+// breathing dots fade in and out effect
+// via http://jsfiddle.net/5kXHJ/
 $animation_dur1: 9s;
 $animation_dur2: 7s;
 
-html * {
-  margin: 0;
-  padding: 0;
-  background-color: $background-color;
-}
 body {
-  height: 100%;
-  overflow: hidden;
+  height: 100%; /* no scrolling plz */
 }
 
-ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($container-size, 2fr));
-  grid-auto-rows: $container-size;
-  grid-auto-flow: dense;
-}
-ul > li {
-  list-style-type: none;
-}
-ul > li img {
-  position: absolute; /* absolute or fixed positioning required */
-  clip-path: circle($circle-size at $circle-center_x $circle-center_y);
-}
-
-// fade in and out effect
-li img {
+img {
   animation: fade $animation_dur1 forwards;
   -webkit-animation: fade $animation_dur1 forwards;
   -moz-animation: fade $animation_dur1 forwards;
@@ -41,8 +17,6 @@ li img {
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
 }
-
-// flickering effect via http://jsfiddle.net/5kXHJ/
 li:nth-child(3n + 4) img {
   animation: fade $animation_dur2 forwards;
   -webkit-animation: fade $animation_dur2 forwards;
