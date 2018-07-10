@@ -1,5 +1,5 @@
-# little globes
+A Pen created at CodePen.io. You can find this one at https://codepen.io/basilleaf/pen/ZjEEMo.
 
+ css grid layout with Mars Reconnaissance Orbiter images (HiRISE)
 
-css trick to make images have a sphere-like appearance
-https://codepen.io/donovanh/pen/GBIiv
+3D css effect via https://codepen.io/donovanh/pen/GBIiv
